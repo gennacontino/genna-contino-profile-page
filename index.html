@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <section class="top">
+        <h1>Genna Contino</h1>
+        <h2>New York-based journalist</h2>
+        <p>gennac07@gmail.com</p>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/genna.jpg">
+        <figcaption>Genna in 2023. <span class="credit">Credit: Allison Check</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>I'm a freelance journalist and student at the Craig Newmark Graduate School of Journalism at the City University of New York.</p>
+        <p>My work has appeared in USA Today, the Charlotte Observer, the Greenville News, the Spartanburg Herald-Journal, the Charlotte Ledger, the Post and Courier and the Free Times. </p>
+      </section>
+
+      <h3 class="flex-hed">My published work</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="images/light-rail.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">Charlotte’s entire light rail fleet must be repaired to fix a part defect that was found after a train derailment in May 2022.
+
+ <span class="credit">Credit: Melissa Melvin-Rodriguez</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Charlotte Area Transit System fired an employee for 2022 train derailment. He says there were warning signs
+            </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/burrito.jpeg">
+            <figcaption class="sub_cap">The owner of Johnny Burrito, Johnny Bitter, presents Martha Harris with a check during her last shift in Charlotte, N.C., on Friday, December 23, 2022. Bitter and customers raised over $25,000 for Harris.
+             <span class="credit">Credit: Khadejeh Nikouyeh</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>423,000 burritos later, Charlotte restaurant’s first employee retires with big gift </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/sheriff.jpg">
+            <figcaption class="sub_cap">Sgt. C. Anderson points out leaking water from ceiling and sound insulation that is damaged in Firing Range B at the Mecklenburg County Sheriffs Office Training Academy in Charlotte, N.C., on Thursday, June 8, 2023.
+           <span class="credit">Credit: Khadejeh Nikouyeh</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Leaky roof. Exposed wires. Mecklenburg sheriff says county training academy unsafe </p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
